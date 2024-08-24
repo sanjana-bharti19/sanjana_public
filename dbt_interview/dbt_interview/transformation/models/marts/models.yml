@@ -1,0 +1,19 @@
+version: 2
+
+models: 
+  - name: fact_case
+    description: fact table to keep case info
+    columns: 
+      - name: fact_case_sk
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_user_account
+    description: fact table to keep user account 
+    columns: 
+      - name: fact_user_sk
+        tests:
+          - unique
+          - not_null
+ 
