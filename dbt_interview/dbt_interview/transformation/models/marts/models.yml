@@ -8,7 +8,7 @@ models:
         tests:
           - unique
           - not_null
-
+          ##all column details can be added to generate documentation 
   - name: fact_user_account
     description: fact table to keep user account 
     columns: 
@@ -16,4 +16,54 @@ models:
         tests:
           - unique
           - not_null
+        ##all column details can be added to generate documentation 
+  - name: dim_account
+    description: dim table for  account 
+    columns: 
+      - name: account_id
+        tests:
+          - unique
+  
+  - name: dim_case
+    description: dim table for case details 
+    columns: 
+      - name: case_id
+        tests:
+          - unique
+  
+  - name: dim_contact
+    description: dim table for contact details 
+    columns: 
+      - name: contact_id
+        tests:
+          - unique
+  
+  - name: dim_product
+    description: dim table for product details 
+    columns: 
+      - name: product_id
+        tests:
+          - unique
+  
+  - name: dim_solution
+    description: dim table for solution details 
+    columns: 
+      - name: solution_id
+        tests:
+          - unique
+  
+  - name: dim_user_role
+    description: dim table for solution details 
+    columns: 
+      - name: user_role_id
+        tests:
+          - unique
+
+  - name: dim_user
+    description: dim table for user details 
+    columns: 
+      - name: user_id
+        tests:
+          - unique
+
  
